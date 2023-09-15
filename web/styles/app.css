@@ -1,0 +1,43 @@
+#app {
+    display: grid;
+    gap: 64px;
+    max-width: 512px;
+}
+
+#app header {
+    display: grid;
+    place-items: center;
+}
+
+#app header h1 {
+    color: var(--primary-light);
+    margin-top: -12px;
+}
+
+#app main {
+    display: grid;
+    gap: 64px;
+}
+
+#app main #summary {
+    display: grid;
+    gap: 18px;
+}
+
+#app main #summary h2 {
+    color: var(--text-primary);
+    font-size: 22px;
+    line-height: 100%;
+}
+
+#app main #summary p {
+    color: var(--text-primary);
+    font-size: 16px;
+    line-height: 100%;
+}
+
+#app main #summary .placeholder {
+    color: var(--text-secondary);
+    -webkit-user-select: none;
+    user-select: none;
+}

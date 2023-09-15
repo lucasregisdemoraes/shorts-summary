@@ -1,13 +1,40 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml">
+  <title>Shorts Summary</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <img src="./logo.svg" alt="Logo">
+      <h1>Shorts Summary</h1>
+    </header>
+    <main>
+      <form>
+        <label class="sr-only" for="url">URL do vídeo</label>
+        <input name="url" id="url" type="url" placeholder="URL do vídeo">
+        <button type="submit">
+          <i class="ph ph-play"></i>
+          <span class="sr-only">Resumir</span>
+        </button>
+      </form>
+      <div id="summary">
+        <h2>Resumo</h2>
+        <p class="placeholder">O resumo está sendo gerado. Aguarde...</p>
+      </div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./web/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,47 @@
+:root {
+  --primary-mid: #8257e5;
+  --primary-light: #996dff;
+  --background: #121214;
+  --input-surface: #202024;
+  --text-secondary: #7c7c8a;
+  --text-primary: #ffffff;
+}
+
+body,
+div,
+header,
+main,
+h1,
+h2,
+p,
+form,
+label,
+input,
+button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--background);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
